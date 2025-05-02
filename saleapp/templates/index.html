@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}"
+          rel="stylesheet">
+</head>
+<body>
+    <h1 class="subject">CHAO MUNG BAN DEN WEBSITE BAN HANG TRUC TUYEN</h1>
+
+    <ul>
+        <li><a href=" {{ url_for('product_list') }}">All products</a></li>
+        {%for c in categories %}
+        <li><a href="{{ url_for('product_list',category_id = c.id) }}">{{ c.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
