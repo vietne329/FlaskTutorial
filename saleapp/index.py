@@ -1,5 +1,5 @@
 from flask import render_template, request
-from saleapp import app
+from saleapp import app, db
 import utils
 
 @app.route("/")
@@ -26,5 +26,4 @@ def product_detail(product_id):
 
 if __name__ == '__main__':
     from saleapp.admin import *
-
     app.run(debug=True)
