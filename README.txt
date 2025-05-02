@@ -29,3 +29,7 @@ if __name__ == "__main__":
 
 6. Install flask-admin
     - pip install flask-admin
+
+
+NOTE WHEN OPEN SOURCE CODE
+source .venv/bin/activate
